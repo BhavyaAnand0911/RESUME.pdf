@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Build Your Resume Here !</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><b>RESUME</b>.pdf</a>
+        </div>
+        <ul>
+          <li><a class="home" href="index.html">Home</a></li>
+          <li><a class="contacts" href="#">Contact</a></li>
+          <li><a class="about" href="#">About Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <button class="btn" onclick="start()"><b>CREATE MY RESUME !</b></button>
+    </div>
+    <div class="pageOne" style="display: none">
+      <form name="form1" class="form1">
+        <table class="formTable">
+          <tr>
+            <td>
+              <label id="fele"> First Name: </label>
+            </td>
+            <td>
+              <input type="text" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="fele"> Second Name: </label>
+            </td>
+            <td>
+              <input type="text" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="fele"> Email: </label>
+            </td>
+            <td>
+              <input type="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="fele"> Phone Number: </label>
+            </td>
+            <td>
+              <input type="text" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="fele"> Applying For: </label>
+            </td>
+            <td>
+              <input type="text" list="jobApply" required />
+              <datalist id="jobApply">
+                <option>Software Development Intern</option>
+                <option>Software Development Engineer</option>
+                <option>Front End Developer</option>
+                <option>Back End Developer</option>
+                <option>Full Stack Developer</option>
+                <option>Ethical Hacking</option>
+                <option>Blockchain Developer</option>
+                <option>UI/UX Developer</option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="NEXT PAGE"
+                class="nextPage"
+                onclick="nextPage()"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="pageTwo" style="display: none">
+      <h1 class="eduHead">Educational Details</h1>
+      <br />
+      <div class="entryField">
+        <form name="form2" class="form2">
+          <table class="formTable">
+            <tr>
+              <td>
+                <lable id="fele"> Institution Name : </lable>
+              </td>
+              <td>
+                <input type="text" name="iname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <lable id="fele"> Degree : </lable>
+              </td>
+              <td>
+                <input type="text" name="deg" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <lable id="fele"> Grade : </lable>
+              </td>
+              <td>
+                <input type="text" name="grade" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <button class="addMore" onclick="addEdu()">ADD MORE</button>
+      <button class="nextPage" onclick="nextPage()">NEXT PAGE</button>
+    </div>
+    <div class="pageThree" style="display: none">
+      <h1 class="eduHead">Projects</h1>
+      <br />
+      <div class="entryField">
+        <form name="form3" class="form3">
+          <table class="formTable">
+            <tr>
+              <td>
+                <label id="fele" class="pname"> Project Name : </label>
+              </td>
+              <td>
+                <input type="text" name="pname" />
+              </td>
+            </tr>
+          </table>
+          <br />
+          <span id="fele" class="pdesc"
+            >Project Description <br />
+            <textarea
+              name="projectDet"
+              class="txtarea"
+              rows="15"
+              cols="70"
+              style="resize: none"
+            ></textarea>
+          </span>
+        </form>
+        <button class="nextPage p3npb" onclick="nextPage()">NEXT PAGE</button>
+        <button class="p3amb" onclick="addProject()">ADD MORE</button>
+      </div>
+    </div>
+    <div class="pageFour" style="display: none">
+      <h1 class="eduHead">Experience</h1>
+      <br />
+      <div class="entryField" style="border: none">
+        <form name="form4" class="form4">
+          <table class="formTable">
+            <tr>
+              <td>
+                <label id="fele" class="orgname"> Organization Name : </label>
+              </td>
+              <td>
+                <input type="text" name="orgname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label id="fele" class="duration"> Starded Working : </label>
+              </td>
+              <td>
+                <input type="date" name="durationDate" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label id="fele" class="duration"> Ended Working : </label>
+              </td>
+              <td>
+                <input type="date" name="durationDate" />
+              </td>
+            </tr>
+          </table>
+          <br />
+          <span id="fele" class="wexp"
+            >Work Experience<br />
+            <textarea
+              name="exprienceDets"
+              class="txtarea"
+              rows="15"
+              cols="70"
+              style="resize: none"
+            ></textarea>
+          </span>
+        </form>
+        <button class="nextPage p4npb" onclick="nextPage()">NEXT PAGE</button>
+        <button class="p4amb" onclick="addExp()">ADD MORE</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/bhavya-anand0911" target="-blank"
+        ><img src="Images/linkedin.png"
+      /></a>
+      <a href="http://github.com/BhavyaAnand0911" target="-blank"
+        ><img src="Images/github.png"
+      /></a>
+      <a href="#" target="-blank"><img src="Images/instagram.png" /></a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #150686, #620774, #222121, #6513c3);
+    background-size: 450% 450%;
+	animation: gradient 20s ease infinite;
+    font-family:'Source Code Pro', monospace;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.footer{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 1.1rem;
+}
+.footer img{
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+}
+.navbar{
+    color: white;
+    background-color: #000000;
+    height: 60px;
+}
+.navbar ul{
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+.home{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contacts{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.about{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.home:hover{
+    background-color: white;
+    color: black;
+}
+.contacts:hover{
+    background-color: white;
+    color: black;
+}
+.about:hover{
+    background-color: white;
+    color: black;
+}
+.contacts:active{
+    background-color: rgb(20, 108, 148);
+    color: black;
+}
+.about:active{
+    background-color: rgb(20, 108, 148);
+    color: black;
+}
+.navbar li{
+    display: inline;
+    padding: 20px;
+    margin-right: 10px;
+}
+.logo{
+    display: inline-flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: Ubuntu;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.logo:hover{
+    cursor: pointer;
+    border: 1px solid rgb(147, 155, 221);
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 700px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
+}
+.wlcm{
+    font-size: 5rem;
+    font-family: 'Ubuntu';
+}
+.btn{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(26, 57, 182);
+    color: black;
+    box-shadow: -3px -5px 60px 21px rgba(103, 103, 103, 0.35);
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+}
+.btn:hover{
+    width: 310px;
+    height: 110px;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+.pageOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 700px;
+    background-color: black;
+    color: rgb(184, 181, 181);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: -3px -5px 60px 21px rgba(0, 0, 0, 0.35);
+
+}
+.pageTwo,.pageThree,.pageFour{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 1000px;
+    height: 700px;
+    background-color: black;
+    color: rgb(184, 181, 181);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: -3px -5px 80px 21px rgba(0, 0, 0, 0.35);
+}
+.nextPage{
+    margin: auto;
+    margin-left: 355px;
+    margin-top: 100px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+}
+.pageTwo .nextPage{
+    margin-right: 355px;
+}
+.nextPage:hover{
+    cursor: pointer;
+    width: 155px;
+    height: 55px;
+}
+#fele{
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.eduHead{
+    position: absolute;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.entryField{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(184, 181, 181);
+    border-radius: 20px;    
+    width:750px ;
+    height: 250px;
+    margin-top: 150px;
+}
+.addMore{
+    position: relative;
+    margin-top: 450px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color:rgb(184, 181, 181);
+}
+.pageTwo .nextPage{
+    position: absolute;
+    margin-top: 530px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color:rgb(184, 181, 181);
+}
+.addMore:hover{
+    cursor: pointer;
+    width: 155px;
+    height: 55px;
+}
+input{
+    background-color: rgb(184, 181, 181);
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 6px;
+}
+.pageThree .entryField{
+    border: none;
+    margin: auto;
+    margin-top: 50px;
+}
+.pageThree .formTable{
+    margin-top: 50px;
+}
+.pdesc{
+    text-align: center;
+    margin: auto;
+    margin-left: 130px;
+    padding: 30px;
+}
+.txtarea{
+    position: absolute;
+    resize: none;
+    background-color: rgb(184, 181, 181);
+    border-radius: 15px;
+    font-size: 1.5rem;
+    width: 620px;
+    height: 250px;
+    margin-top: 30px;
+}
+.p3npb{
+    position: absolute;
+    right: 201px;
+    margin-top: 870px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color:rgb(184, 181, 181);
+}
+.p3amb{
+    position: absolute;
+    margin-top: 870px;
+    left: 171px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color:rgb(184, 181, 181);
+}
+.p3amb:hover{
+    cursor: pointer;
+    width: 155px;
+    height: 55px;
+}
+.pageFour .txtarea{
+    height: 150px;
+    width: 730px;
+    resize: none;
+    font-size: 1.2rem;
+}
+.wexp{
+    margin-left: 210px;
+}
+.p4npb{
+    position: absolute;
+    right: 186px;
+    margin-top: 720px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color:rgb(184, 181, 181);
+}
+.p4amb{
+    position: absolute;
+    margin-top: 720px;
+    left: 203px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color:rgb(184, 181, 181);
+}
+.p4amb:hover{
+    cursor: pointer;
+    width: 155px;
+    height: 55px;
+}
