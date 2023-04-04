@@ -1,9 +1,9 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    background: linear-gradient(45deg, #150686, #620774, #222121, #6513c3);
+    background: linear-gradient(45deg, #b61010, #620774, #000000, #6513c3);
     background-size: 450% 450%;
-	animation: gradient 20s ease infinite;
+	animation: gradient 30s ease infinite;
     font-family:'Source Code Pro', monospace;
 }
 @keyframes gradient {
@@ -152,7 +152,7 @@ body{
     box-shadow: -3px -5px 60px 21px rgba(0, 0, 0, 0.35);
 
 }
-.pageTwo,.pageThree,.pageFour{
+.pageTwo,.pageThree,.pageFour,.skills,.final{
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -220,7 +220,7 @@ body{
     font-weight: 500;
     background-color:rgb(184, 181, 181);
 }
-.pageTwo .nextPage{
+.pageTwo .nextPage , .skills .nextPage{
     position: absolute;
     margin-top: 530px;
     padding: 10px;
@@ -270,6 +270,7 @@ input{
     width: 620px;
     height: 250px;
     margin-top: 30px;
+    padding: 5px;
 }
 .p3npb{
     position: absolute;
@@ -309,6 +310,7 @@ input{
     width: 730px;
     resize: none;
     font-size: 1.2rem;
+    border-radius:10px;
 }
 .wexp{
     margin-left: 210px;
@@ -345,4 +347,63 @@ input{
     cursor: pointer;
     width: 155px;
     height: 55px;
+}
+.skills .addMore{
+    position: absolute;
+    margin-top: 532px;
+    left: 198px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color:rgb(184, 181, 181);;
+}
+.skills .nextPage{
+    left: 60px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+}
+.skills .nextPage:hover, .skills .addMore:hover{
+    cursor: pointer;
+    width: 155px;
+    height: 55px; 
+}
+.skills #level{
+    font-size: 1.5rem;
+    padding: 6px;
+}
+.resume{
+    position: relative;
+    top: 100px;
+    left: 300px;
+    width: 1300px;
+    height: 2000px;
+    margin-bottom: 100px;
+    background-color: #fff;
+}
+.personal{
+    display: inline-flex;
+    height: inherit;
+    width: 390px;
+    background-color: rgb(219, 205, 243);
+}
+.prof{
+    display: inline-flex;
+    height: inherit;
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+
+}
+.generate{
+    background-color:rgb(184, 181, 181);
 }

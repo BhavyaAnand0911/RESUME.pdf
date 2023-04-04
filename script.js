@@ -1,11 +1,13 @@
-let pageNo=[".container",".pageOne",".pageTwo",".pageThree",".pageFour"];
+var pageNo=[".container",".pageOne",".pageTwo",".skills",".pageThree",".pageFour",".final"];
 let iname=[];
 let deg=[];
 let grade=[];
+let skills=[];
+let exp=[];
 var pageCount=0;
 var eduCount=0;
+var skillCount=0;
 function start(){
-    // alert("working");
     $(pageNo[a]).hide();
     a++;
     $(pageNo[a]).show();
@@ -15,6 +17,10 @@ function nextPage(){
     $(pageNo[a]).hide();
     a++;
     $(pageNo[a]).show();
+    if(a==pageNo.length-1){
+        $(pageNo[a]).hide();
+        $('.resume').show();
+    }
 }
 
 function addEdu(){
@@ -41,4 +47,7 @@ function addProject(){
 function addExp(){
     $('.form4')[0].reset();
     $('textarea').val('');
+}
+function addSkill(){
+    $('.sform')[0].reset();
 }

@@ -133,6 +133,35 @@
       <button class="addMore" onclick="addEdu()">ADD MORE</button>
       <button class="nextPage" onclick="nextPage()">NEXT PAGE</button>
     </div>
+    <div class="skills" style="display: none;">
+      <h1 class="eduHead">Skills</h1>
+      <br />
+      <div class="entryField">
+        <form name="sform" class="sform">
+          <table class="formTable">
+            <tr>
+              <td>
+                <label id="fele" class="sname"> Skill : </label>
+              </td>
+              <td>
+                <input type="text" name="sname" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label id="fele" class="lname"> Level : </label>
+              </td>
+              <td>
+                <input type="number" id="level" name="lname" placeholder="Out Of 10" />
+              </td>
+            </tr>
+          </table>
+          <br />
+        </form>
+        <button class="nextPage p3npb" onclick="nextPage()">NEXT PAGE</button>
+        <button class="addMore" onclick="addSkill()">ADD MORE</button>
+      </div>
+    </div>
     <div class="pageThree" style="display: none">
       <h1 class="eduHead">Projects</h1>
       <br />
@@ -211,6 +240,17 @@
         <button class="p4amb" onclick="addExp()">ADD MORE</button>
       </div>
     </div>
+    <div class="container final" style="display: none;">
+      <button class="btn generate" onclick="start()"><b>GENERATE RESUME</b></button>
+    </div>
+    <div class="resume" style="display: none;">
+      <div class="personal">
+        <h1 style="margin-left: 10px">Name</h1>
+      </div>
+      <div class="prof">
+        <h1>Experience</h1>
+      </div>
+    </div>
     <footer class="footer">
       <a href="https://www.linkedin.com/in/bhavya-anand0911" target="-blank"
         ><img src="Images/linkedin.png"
@@ -221,6 +261,7 @@
       <a href="#" target="-blank"><img src="Images/instagram.png" /></a>
     </footer>
     <script src="script.js"></script>
+    <script src="server.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </body>
 </html>
