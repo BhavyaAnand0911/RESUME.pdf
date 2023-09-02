@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" type="text/css" href="./Styles/Style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -133,7 +133,7 @@
       <button class="addMore" onclick="addEdu()">ADD MORE</button>
       <button class="nextPage" onclick="nextPage()">NEXT PAGE</button>
     </div>
-    <div class="skills" style="display: none;">
+    <div class="skills" style="display: none">
       <h1 class="eduHead">Skills</h1>
       <br />
       <div class="entryField">
@@ -152,7 +152,12 @@
                 <label id="fele" class="lname"> Level : </label>
               </td>
               <td>
-                <input type="number" id="level" name="lname" placeholder="Out Of 10" />
+                <input
+                  type="number"
+                  id="level"
+                  name="lname"
+                  placeholder="Out Of 10"
+                />
               </td>
             </tr>
           </table>
@@ -240,10 +245,12 @@
         <button class="p4amb" onclick="addExp()">ADD MORE</button>
       </div>
     </div>
-    <div class="container final" style="display: none;">
-      <button class="btn generate" onclick="start()"><b>GENERATE RESUME</b></button>
+    <div class="container final" style="display: none">
+      <button class="btn generate" onclick="start()">
+        <b>GENERATE RESUME</b>
+      </button>
     </div>
-    <div class="resume" style="display: none;">
+    <div class="resume" style="display: none">
       <div class="personal">
         <h1 style="margin-left: 10px">Name</h1>
       </div>
@@ -254,14 +261,13 @@
     <footer class="footer">
       <a href="https://www.linkedin.com/in/bhavya-anand0911" target="-blank"
         ><img src="Images/linkedin.png"
-        
       /></a>
       <a href="http://github.com/BhavyaAnand0911" target="-blank"
         ><img src="Images/github.png"
       /></a>
       <a href="#" target="-blank"><img src="Images/instagram.png" /></a>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </body>
 </html>
